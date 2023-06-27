@@ -1,0 +1,1122 @@
+[
+  {
+    "id": 599,
+    "question": "How are objects in PHP passed by?",
+    "description": null,
+    "answers": {
+      "answer_a": "Objects are passed by value.",
+      "answer_b": "Objects are passed by reference.",
+      "answer_c": "Neither of the mentioned",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "PHP" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 958,
+    "question": "In Kubernetes, a node is:",
+    "description": null,
+    "answers": {
+      "answer_a": "A tool for starting a kubernetes cluster on a local machine",
+      "answer_b": "A worker machine",
+      "answer_c": "A machine that coordinates the scheduling and management of application containers on the cluster",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 420,
+    "question": "What Is a MySQL View?",
+    "description": null,
+    "answers": {
+      "answer_a": "VIEWS are virtual tables that do not store any data of their own but display data stored in other tables.",
+      "answer_b": "VIEWS are static tables that store data but the data can't be changed",
+      "answer_c": "VIEWS are temporary tables that store data which store data only for a certain amount of time",
+      "answer_d": "VIEWS are no different that any other tables except they are used for faster loading.",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 580,
+    "question": "What is Joomla in PHP?",
+    "description": null,
+    "answers": {
+      "answer_a": "Set of library enriched with fucntions",
+      "answer_b": "Framework for designing dynamic pages",
+      "answer_c": "An open source CMS",
+      "answer_d": "framework and distribution system for reusable PHP components",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "PHP" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 677,
+    "question": "What is the default working directory of the Linux administrator user?",
+    "description": null,
+    "answers": {
+      "answer_a": "/root",
+      "answer_b": "Doesn't have one",
+      "answer_c": "/usr/admin",
+      "answer_d": "/administrator",
+      "answer_e": "/admin",
+      "answer_f": "/home/root"
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "The default working directory is always /root. This directory is kept only for the root user and no other.",
+    "tip": null,
+    "tags": [{ "name": "BASH" }, { "name": "Linux" }],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 148,
+    "question": "Which doctype is correct for HTML5?",
+    "description": null,
+    "answers": {
+      "answer_a": "<!DOCTYPE HTML5>",
+      "answer_b": "<!DOCTYPE HTML PUBLIC>",
+      "answer_c": "<!DOCTYPE html>",
+      "answer_d": "<HTML5>",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_c",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 838,
+    "question": "Docker host's IP address by default is 192.168.99.100",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Docker" }],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 497,
+    "question": "Which of the following attribute is used to group elements?",
+    "description": null,
+    "answers": {
+      "answer_a": "item",
+      "answer_b": "itemgroup",
+      "answer_c": "itemcheck",
+      "answer_d": "itemprop",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1038,
+    "question": "The default Ansible inventory file is located at:",
+    "description": null,
+    "answers": {
+      "answer_a": "/home/ansible/inventory",
+      "answer_b": "/etc/ansible/inventory",
+      "answer_c": "/home/ansible/hosts",
+      "answer_d": "/etc/ansible/hosts",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "DevOps" }],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 984,
+    "question": "How does a FOR loop start?",
+    "description": null,
+    "answers": {
+      "answer_a": "for i = 1 to 5",
+      "answer_b": "for (i = 0; i <= 5; i++)",
+      "answer_c": "for (i <= 5; i++)",
+      "answer_d": "for (i = 0; i <= 5)",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "JavaScript" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 405,
+    "question": "The program called MySQL is",
+    "description": null,
+    "answers": {
+      "answer_a": "There Isn't A Program Just Called Mysql",
+      "answer_b": "A Client Program That Lets You Send SQL Commands To The Database Engine",
+      "answer_c": "The Database Engine",
+      "answer_d": "A Wrapper Through Which Java Clients Must Connect To The Databases  The Database Engine",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 854,
+    "question": "How to save a new docker image with container id mentioned in the command on the local system.",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker save 109ca6efc quizapi/httpd_image",
+      "answer_b": "$ docker --save 109ca6efc quizapi/httpd_image",
+      "answer_c": "$ docker commit 109ca6efc quizapi/httpd_image",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Docker" }],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 394,
+    "question": "To use MySQL on your computer, you'll need",
+    "description": null,
+    "answers": {
+      "answer_a": "Perl, PHP Or Java",
+      "answer_b": "FTP And Telnet",
+      "answer_c": "Some Sort Of Client Program To Access The Databases",
+      "answer_d": "A Browser",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 903,
+    "question": "The command to create Kubernetes service is",
+    "description": null,
+    "answers": {
+      "answer_a": "kubectl expose",
+      "answer_b": "kubectl deploy",
+      "answer_c": "kubectl run",
+      "answer_d": "kubectl set service",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 177,
+    "question": "Which command is used to access a running container?",
+    "description": null,
+    "answers": {
+      "answer_a": "docker exec -it container_id bash",
+      "answer_b": "docker fetch container",
+      "answer_c": "docker run container_id bash",
+      "answer_d": "docker login container_id",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Docker" }],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 650,
+    "question": "Which command is used to copy file across different system?",
+    "description": null,
+    "answers": {
+      "answer_a": "rcp",
+      "answer_b": "scp",
+      "answer_c": "mcp",
+      "answer_d": "ncp",
+      "answer_e": "rsync",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "true",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "BASH" }],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 562,
+    "question": "What number is the first key of a PHP\u2019s numerical array?",
+    "description": null,
+    "answers": {
+      "answer_a": "-1",
+      "answer_b": "2",
+      "answer_c": "1",
+      "answer_d": "0",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "PHP" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 998,
+    "question": "Which of the following are Container Orchestrators? Select all answers that apply.",
+    "description": null,
+    "answers": {
+      "answer_a": "Vault",
+      "answer_b": "Ansible",
+      "answer_c": "Kubernetes",
+      "answer_d": "Docker Swarm",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 532,
+    "question": "There are ____ different heading tags in HTML",
+    "description": null,
+    "answers": {
+      "answer_a": "4",
+      "answer_b": "7",
+      "answer_c": "6",
+      "answer_d": "5",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 690,
+    "question": "How can we list out all currently executing background processes?",
+    "description": null,
+    "answers": {
+      "answer_a": "ps -e",
+      "answer_b": "top",
+      "answer_c": "ps faux",
+      "answer_d": "proccess -aux",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "BASH" }, { "name": "Linux" }],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 897,
+    "question": "Replication Controllers and Deployment Controllers are part of",
+    "description": null,
+    "answers": {
+      "answer_a": "API Controller Manager",
+      "answer_b": "Etcd manager",
+      "answer_c": "Master Controller Manager",
+      "answer_d": "Kubeadm",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 864,
+    "question": "How to create a volume which docker container will use to store data.",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker --volume create",
+      "answer_b": "$ docker volume create",
+      "answer_c": "$ docker create volume",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Docker" }],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 771,
+    "question": "Which of the following type of variables are whole numbers, without a decimal point, like 4195?",
+    "description": null,
+    "answers": {
+      "answer_a": "Integers",
+      "answer_b": "Doubles",
+      "answer_c": "Booleans",
+      "answer_d": "Strings",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "Integers: are whole numbers, without a decimal point, like 763211.",
+    "tip": null,
+    "tags": [{ "name": "PHP" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 733,
+    "question": "How to watch rolling update status of \"frontend\" deployment until completion in Kubernetes?",
+    "description": null,
+    "answers": {
+      "answer_a": "kubectl rollout status --live deployment/frontend",
+      "answer_b": "kubectl rollout status -w deployment/frontend",
+      "answer_c": "kubectl rollout status -l deployment/frontend",
+      "answer_d": "kubectl rollout status -s deployment/frontend",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "Which command to use for complete details of a command on the shell?",
+    "description": null,
+    "answers": {
+      "answer_a": "help",
+      "answer_b": "man",
+      "answer_c": "?",
+      "answer_d": "info",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_b",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Linux" }],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 324,
+    "question": "You have lost access to your admin area and can't recover it with email. What do you do?",
+    "description": null,
+    "answers": {
+      "answer_a": "Delete your themes folder.",
+      "answer_b": "Reinstall Wordpress.",
+      "answer_c": "Install a plugin to recover your password.",
+      "answer_d": "Add a new user with admin privileges in MySQL.",
+      "answer_e": "Reset the password of your user through MySQL.",
+      "answer_f": "Register a new user and set it as an administrator via your panel."
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "true",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "WordPress" }],
+    "category": "CMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 639,
+    "question": "Which command opens the interactive PHP shell from the command line interface?",
+    "description": null,
+    "answers": {
+      "answer_a": "php -a",
+      "answer_b": "php artisian",
+      "answer_c": "php _run",
+      "answer_d": "php -s",
+      "answer_e": "php -i",
+      "answer_f": "php -int"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "PHP" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 140,
+    "question": "What is the correct HTML for making a text area?",
+    "description": null,
+    "answers": {
+      "answer_a": "<input type=\"textbox\">",
+      "answer_b": "<textarea>",
+      "answer_c": "<input type=\"textarea\">",
+      "answer_d": "<textbox>",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_b",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 368,
+    "question": "MySQL supports user defined functions",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 987,
+    "question": "What is the correct way to write a JavaScript array?",
+    "description": null,
+    "answers": {
+      "answer_a": "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")",
+      "answer_b": "var colors = \"red\", \"green\", \"blue\"",
+      "answer_c": "var colors = [\"red\", \"green\", \"blue\"]",
+      "answer_d": "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "JavaScript" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 795,
+    "question": "What are Docker Images?",
+    "description": null,
+    "answers": {
+      "answer_a": "Docker image is the source of Docker virtualization.",
+      "answer_b": "Docker image is the source of Docker system.",
+      "answer_c": "Docker image is the source of Docker container.",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Docker" }],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1054,
+    "question": "Which command would you use to gather facts with Ansible?",
+    "description": null,
+    "answers": {
+      "answer_a": "ansible your_server -m gather",
+      "answer_b": "ansible your_server -m setup",
+      "answer_c": "ansible your_server -m info",
+      "answer_d": "ansible your_server -m fact",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "DevOps" }],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 131,
+    "question": "Which character is used to indicate an end tag?",
+    "description": null,
+    "answers": {
+      "answer_a": "/",
+      "answer_b": "<",
+      "answer_c": "*",
+      "answer_d": "^",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "HTML" }],
+    "category": "",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 914,
+    "question": "The Kubernetes Network proxy runs on which node?",
+    "description": null,
+    "answers": {
+      "answer_a": "Master Node",
+      "answer_b": "Worker Node",
+      "answer_c": "All the nodes",
+      "answer_d": "None of the mentioned",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1020,
+    "question": "Which Process Runs On Kubernetes Master Node?",
+    "description": null,
+    "answers": {
+      "answer_a": "Kube-cli-proxy process runs on Kubernetes master node.",
+      "answer_b": "Kube-cli-server process runs on Kubernetes master node.",
+      "answer_c": "Kube-apiserver process runs on Kubernetes master node.",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Kubernetes" }],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 314,
+    "question": "What websites can you build with WordPress?",
+    "description": null,
+    "answers": {
+      "answer_a": "Shop",
+      "answer_b": "Blog",
+      "answer_c": "Betting website",
+      "answer_d": "All of the mentioned",
+      "answer_e": "A Learning platform",
+      "answer_f": "News website"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "WordPress" }],
+    "category": "CMS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 852,
+    "question": "How to stop a container with container id mentioned in the command?",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker ter 109cb6nw",
+      "answer_b": "$ docker stop -ls 109cb6nw",
+      "answer_c": "$ docker stop 109cb6nw",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "Docker" }],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 991,
+    "question": "JavaScript is the same as Java.",
+    "description": null,
+    "answers": {
+      "answer_a": "False",
+      "answer_b": "True",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "JavaScript" }],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 209,
+    "question": "UPDATE keyword is used for:",
+    "description": null,
+    "answers": {
+      "answer_a": "to create database elements",
+      "answer_b": "to change data",
+      "answer_c": "to manage users",
+      "answer_d": "to select data",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "MySQL" }],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 257,
+    "question": "Which CMS powers around 35% of all websites on the internet?",
+    "description": null,
+    "answers": {
+      "answer_a": "WordPress",
+      "answer_b": "Dropal",
+      "answer_c": "Joomla",
+      "answer_d": "Laravel",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [{ "name": "WordPress" }],
+    "category": "CMS",
+    "difficulty": "Easy"
+  }
+]

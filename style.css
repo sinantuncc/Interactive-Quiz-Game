@@ -1,0 +1,46 @@
+:root{
+    --border : 1px solid green;
+}
+
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.time{
+    top: 0;
+    right: 0;
+    border-bottom: var(--border); 
+    border-left: var(--border); 
+    border-radius: 0 1em  0 100%;
+    padding: 1em 1em 2em 2em ;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+.game-panel{
+    height: 400px;
+    position: relative;
+    border: var(--border);
+}
+
+.info-panel {
+    height: 400px;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+}
+.answers > p {
+    background-color: rgb(177, 175, 175);
+    padding: 10px;
+    border-radius: 1em;
+}
