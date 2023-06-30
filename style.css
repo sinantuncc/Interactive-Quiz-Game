@@ -46,3 +46,6 @@ body{
 .answers{
     display: grid;
 }
+#buttons{
+    display: flex;
+}

@@ -2,17 +2,16 @@
 
 // define variables
 
-let remember = 0;
+let remember = 0; // remember current question index
+
 const userAnswers = [];
-// end
 
 const gameSection = document.querySelector(".game-section");
 
-// start game
 
 const getQuestions = async () => {
   try {
-    const response = await fetch("questions.json"); // from local questions.json file
+    const response = await fetch("questions.json"); // from  questions.json file
     const data = await response.json(); // data ready
 
     displayQuestions(data);
@@ -26,8 +25,6 @@ function startGame() {
 
   document.querySelector(".start-section").classList.add("d-none");
 
-  //e.target.classList.add("d-none");
-
   // show game screen
 
   gameSection.classList.remove("d-none");
@@ -38,46 +35,59 @@ function startGame() {
 }
 
 const displayQuestions = (data) => {
-  if (data.length) {
-    /*
-    [
-       0:{
-        "id": 1,
-        "question": "2 + 2 = ?",
-        "answers": {
-            "a": "1",
-            "b": "2",
-            "c": "4",
-            "d": "5"
-        },
-        "correct_answer": "c"
-    },
-    ]
-   */
-
+  if (data.length > remember) {
     const question = document.querySelector("#question");
 
     const answers = document.getElementsByTagName("label");
 
-
-    question.textContent = remember+1 + ")  " + data[remember]["question"];
+    question.textContent = remember + 1 + ")  " + data[remember]["question"];
 
     const ans = data[remember]["answers"];
 
-
-
-    Object.entries(ans).forEach((value, index, array)=>{
-      answers[index].textContent =value[0].toUpperCase() + ") " + value[1];
-    })
-
-    
-
+    Object.entries(ans).forEach((value, index) => {
+      answers[index].textContent = value[0].toUpperCase() + ") " + value[1];
+    });
   } else {
-    gameSection.textContent = "Not found data!";
+    gameSection.textContent = "Game Over!";
   }
 };
 
-function handleSubmit(e){
-  e.preventDefault();
-  console.log(e);
+let message = document.querySelector(".message");
+
+document.querySelector("#buttons").addEventListener("click", (event) => {
+
+  let choice = document.querySelector('input[name="answer"]:checked');
+
+  switch (event.target.id) {
+    case "skip":
+      skip(choice);
+      break;
+    case "answer":
+      answer(choice);
+      break;
+  }
+});
+
+function answer(choice) {
+  if (choice) {
+    userAnswers.push(choice.value);
+    remember++;
+    getQuestions();
+    choice.checked = false;
+  } else {
+    message.textContent = "Choice a option or skip";
+  }
+
+  console.log(userAnswers);
+}
+
+function skip(choice) {
+  userAnswers.push(null);
+  if (choice) choice.checked = false;
+
+  remember++;
+  getQuestions();
+
+  console.log(userAnswers);
+
 }

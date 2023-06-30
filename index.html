@@ -34,9 +34,9 @@
           <div id="questionArea">
             <h3 id="question">This is a questions</h3>
 
-            <form class="answers" action="handleSubmit()">
+            <div class="answers">
               <div>
-                <input type="radio" id="a" name="answer" value="a" />
+                <input type="radio" id="a" name="answer" value="a"  />
                 <label for="a">Answer A</label>
               </div>
               <div>
@@ -54,8 +54,17 @@
                 <label for="d">Answer A</label>
               </div>
 
-              <button type="submit">Answer</button>
-            </form>
+              <div id="buttons">
+                <button type="button" id="skip">Skip</button>
+
+                <button type="button" id="answer">Answer</button>
+              </div>
+              
+            </div>
+
+            <div class="message">
+
+            </div>
           </div>
         </div>
       </section>
