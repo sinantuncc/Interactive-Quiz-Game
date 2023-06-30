@@ -29,7 +29,6 @@ body{
     padding: 1em 1em 2em 2em ;
     font-size: 1.6em;
     font-weight: 900;
-    display: none;
 }
 
 .game-panel{
@@ -49,3 +48,4 @@ body{
 #buttons{
     display: flex;
 }
+input['name:answer'].

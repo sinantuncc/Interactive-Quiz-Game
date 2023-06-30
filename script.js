@@ -14,6 +14,8 @@ let message = document.querySelector(".message");
 
 const answerBtn = document.querySelector("#answer");
 
+const time = document.querySelector(".time");
+
 // get data
 
 const getQuestions = async () => {
@@ -59,6 +61,8 @@ const displayQuestions = (isShowAnswer = false, newData = null) => {
       answers[index].textContent = value[0].toUpperCase() + ") " + value[1];
     });
 
+    countdown();
+
     if (isShowAnswer) message.textContent = data[remember]["correct_answer"];
   } else {
     showResults();
@@ -95,7 +99,7 @@ function answer(choice) {
   }
 }
 
-function skip(choice) {
+function skip(choice=null) {
   userAnswers.push(null);
   if (choice) choice.checked = false;
 
@@ -162,4 +166,35 @@ const newGame = () => {
   }
 
   displayQuestions(false, newData);
+};
+
+const countdown = () => {
+  let i = 67;
+  let m, s;
+
+  const timer = setInterval(() => {
+    m = Number.parseInt(i / 60);
+    s = i - m * 60;
+    console.log(m, s);
+    m = check(m);
+    s = check(s);
+    time.textContent = m + " : " + s;
+    i--;
+
+    if (i < 0){
+      clearInterval(timer);
+      skip();
+    }  
+  }, 1000);
+
+
+  
+
+  function check(num) {
+     if(num < 10) {
+     return num = "0" + num
+    } else {
+     return num;
+    }
+  }
 };
