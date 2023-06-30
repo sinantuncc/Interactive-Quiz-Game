@@ -37,9 +37,6 @@ function startGame() {
 
 const displayQuestions = (isShowAnswer = false) => {
   if (data.length > remember) {
-
-    
-
     const question = document.querySelector("#question");
 
     const answers = document.getElementsByTagName("label");
@@ -54,7 +51,7 @@ const displayQuestions = (isShowAnswer = false) => {
 
     if (isShowAnswer) message.textContent = data[remember]["correct_answer"];
   } else {
-    gameSection.textContent = "Game Over!";
+    showResults();
   }
 };
 
@@ -85,8 +82,6 @@ function answer(choice) {
   } else {
     message.textContent = "Choice a option or skip";
   }
-
-  console.log(userAnswers);
 }
 
 function skip(choice) {
@@ -98,11 +93,44 @@ function skip(choice) {
 
   message.textContent = "";
   answerBtn.disabled = false;
-
-  console.log(userAnswers);
 }
 function showAnswer() {
   displayQuestions(true);
-  
+
   answerBtn.disabled = true;
 }
+
+const showResults = () => {
+  const [correctAnswer, wrongAnswer, blankAnswer] = [[], [], []];
+
+  let i;
+  for (i = 0; i < data.length; i++) {
+    if (userAnswers[i] === data[i]["correct_answer"]) {
+      correctAnswer.push(data[i].id);
+    } if(userAnswers[i] !== data[i]["correct_answer"] && userAnswers[i] !== null) {
+      wrongAnswer.push(data[i].id);
+    }
+    if (userAnswers[i] === null) {
+      blankAnswer.push(data[i].id);
+    }
+  }
+
+  
+
+ let text = `
+ "Game Over!"
+ 
+ Scores
+
+ Total Question: ${data.length} <br>
+ Correct Answer: ${correctAnswer.length} :> ${correctAnswer} <br>
+ Wrong Answer  : ${wrongAnswer.length}  :>  ${wrongAnswer} <br>
+ Blank Answer  : ${blankAnswer.length}  :> ${blankAnswer} <br>
+
+ <button onclick="newGame()">Start New Quiz</button>
+ `;
+
+ gameSection.innerHTML = text;
+
+};
+

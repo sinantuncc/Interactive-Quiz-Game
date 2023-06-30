@@ -61,7 +61,7 @@
             "a": "<input type=\"textbox\">",
             "b": "<textarea>",
             "c": "<input type=\"textarea\">",
-            "answer_d": "<textbox>"
+            "d": "<textbox>"
         },
         "correct_answer": "b"
     },
