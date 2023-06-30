@@ -46,6 +46,7 @@ function startGame() {
 }
 
 const displayQuestions = (isShowAnswer = false, newData = null) => {
+
   if (newData) data = newData;
 
   if (data.length > remember) {
@@ -61,9 +62,7 @@ const displayQuestions = (isShowAnswer = false, newData = null) => {
       answers[index].textContent = value[0].toUpperCase() + ") " + value[1];
     });
 
-    countdown();
-
-    if (isShowAnswer) message.textContent = data[remember]["correct_answer"];
+    if (isShowAnswer) message.textContent = "Correct Answer : " +  data[remember]["correct_answer"].toUpperCase();
   } else {
     showResults();
   }
@@ -99,7 +98,7 @@ function answer(choice) {
   }
 }
 
-function skip(choice=null) {
+function skip(choice = null) {
   userAnswers.push(null);
   if (choice) choice.checked = false;
 
@@ -135,14 +134,16 @@ const showResults = () => {
   }
 
   let text = `
- "Game Over!"
- 
- Scores
+  <div class="d-grid">
+  <h3>Game Over !</h3>
+  <h4 class="text-decoration-underline">Scores</h4>
+  <h5>Total Questions    : ${data.length}</h5>
+  <h5 class="text-success">Correct Questions  : ${correctAnswer.length}</h5>
+  <h5 class="text-danger">Wrong Questions    : ${wrongAnswer.length}</h5>
+  <h5 class="text-secondary">Brand Questions    : ${blankAnswer.length}</h5>
 
- Total Question: ${data.length} <br>
- Correct Answer: ${correctAnswer.length} :> ${correctAnswer} <br>
- Wrong Answer  : ${wrongAnswer.length}  :>  ${wrongAnswer} <br>
- Blank Answer  : ${blankAnswer.length}  :> ${blankAnswer} <br>
+ 
+</div>
 
  `;
 
@@ -168,33 +169,3 @@ const newGame = () => {
   displayQuestions(false, newData);
 };
 
-const countdown = () => {
-  let i = 67;
-  let m, s;
-
-  const timer = setInterval(() => {
-    m = Number.parseInt(i / 60);
-    s = i - m * 60;
-    console.log(m, s);
-    m = check(m);
-    s = check(s);
-    time.textContent = m + " : " + s;
-    i--;
-
-    if (i < 0){
-      clearInterval(timer);
-      skip();
-    }  
-  }, 1000);
-
-
-  
-
-  function check(num) {
-     if(num < 10) {
-     return num = "0" + num
-    } else {
-     return num;
-    }
-  }
-};

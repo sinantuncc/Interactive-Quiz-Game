@@ -38,7 +38,7 @@
         "answers": {
             "a": "Perl, PHP Or Java",
             "b": "FTP And Telnet",
-            "c": "Some Sort Of Client Program To Access The Databases",
+            "c": "Program To Access The Databases",
             "d": "A Browser"
         },
         "correct_answer": "a"

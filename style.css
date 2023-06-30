@@ -1,5 +1,5 @@
 :root{
-    --border : 1px solid green;
+    --border : 3px solid green;
 }
 
 *{
@@ -14,38 +14,28 @@ body{
     padding: 0;
 }
 
-.d-none{
-    display: none;
-}
-
-.time{
-    position: absolute;
-    text-align: center;
-    top: 0;
-    right: 0;
-    border-bottom: var(--border); 
-    border-left: var(--border); 
-    border-radius: 0 1em  0 100%;
-    padding: 1em 1em 2em 2em ;
-    font-size: 1.6em;
-    font-weight: 900;
-}
 
 .game-panel{
-    position: relative;
     border: var(--border);
-    height: 50vh;
-    width: 50vw;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 1em;
 }
 
 #questionArea{
     display: grid;
+    gap: 1em;
 }
 
-.answers{
-    display: grid;
-}
 #buttons{
-    display: flex;
+    display: flex; 
+    justify-content: center;
+    gap: 1em;
 }
-input['name:answer'].
+input[type="radio"]:checked > label{
+    background-color: dodgerblue;
+}
+.message{
+    font-size: 1rem;
+    font-weight: bolder;
+}
