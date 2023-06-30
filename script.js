@@ -8,13 +8,14 @@ const userAnswers = [];
 
 const gameSection = document.querySelector(".game-section");
 
+let data;
 
 const getQuestions = async () => {
   try {
     const response = await fetch("questions.json"); // from  questions.json file
-    const data = await response.json(); // data ready
-
-    displayQuestions(data);
+    const result = await response.json(); // data ready
+    data = result;
+    displayQuestions();
   } catch (error) {
     console.log(error);
   }
@@ -34,8 +35,11 @@ function startGame() {
   getQuestions();
 }
 
-const displayQuestions = (data) => {
+const displayQuestions = (isShowAnswer = false) => {
   if (data.length > remember) {
+
+    
+
     const question = document.querySelector("#question");
 
     const answers = document.getElementsByTagName("label");
@@ -47,15 +51,17 @@ const displayQuestions = (data) => {
     Object.entries(ans).forEach((value, index) => {
       answers[index].textContent = value[0].toUpperCase() + ") " + value[1];
     });
+
+    if (isShowAnswer) message.textContent = data[remember]["correct_answer"];
   } else {
     gameSection.textContent = "Game Over!";
   }
 };
 
 let message = document.querySelector(".message");
+const answerBtn = document.querySelector("#answer");
 
 document.querySelector("#buttons").addEventListener("click", (event) => {
-
   let choice = document.querySelector('input[name="answer"]:checked');
 
   switch (event.target.id) {
@@ -65,6 +71,8 @@ document.querySelector("#buttons").addEventListener("click", (event) => {
     case "answer":
       answer(choice);
       break;
+    case "showAnswer":
+      showAnswer();
   }
 });
 
@@ -72,7 +80,7 @@ function answer(choice) {
   if (choice) {
     userAnswers.push(choice.value);
     remember++;
-    getQuestions();
+    displayQuestions();
     choice.checked = false;
   } else {
     message.textContent = "Choice a option or skip";
@@ -86,8 +94,15 @@ function skip(choice) {
   if (choice) choice.checked = false;
 
   remember++;
-  getQuestions();
+  displayQuestions();
+
+  message.textContent = "";
+  answerBtn.disabled = false;
 
   console.log(userAnswers);
-
+}
+function showAnswer() {
+  displayQuestions(true);
+  
+  answerBtn.disabled = true;
 }
