@@ -10,6 +10,12 @@ const gameSection = document.querySelector(".game-section");
 
 let data;
 
+let message = document.querySelector(".message");
+
+const answerBtn = document.querySelector("#answer");
+
+// get data
+
 const getQuestions = async () => {
   try {
     const response = await fetch("questions.json"); // from  questions.json file
@@ -24,7 +30,9 @@ const getQuestions = async () => {
 function startGame() {
   // hidden start screen
 
-  document.querySelector(".start-section").classList.add("d-none");
+  const startSection = document.querySelector(".start-section");
+
+  startSection.classList.add("d-none");
 
   // show game screen
 
@@ -35,7 +43,9 @@ function startGame() {
   getQuestions();
 }
 
-const displayQuestions = (isShowAnswer = false) => {
+const displayQuestions = (isShowAnswer = false, newData = null) => {
+  if (newData) data = newData;
+
   if (data.length > remember) {
     const question = document.querySelector("#question");
 
@@ -55,9 +65,6 @@ const displayQuestions = (isShowAnswer = false) => {
   }
 };
 
-let message = document.querySelector(".message");
-const answerBtn = document.querySelector("#answer");
-
 document.querySelector("#buttons").addEventListener("click", (event) => {
   let choice = document.querySelector('input[name="answer"]:checked');
 
@@ -70,6 +77,10 @@ document.querySelector("#buttons").addEventListener("click", (event) => {
       break;
     case "showAnswer":
       showAnswer();
+      break;
+    case "newGame":
+      newGame();
+      break;
   }
 });
 
@@ -107,7 +118,11 @@ const showResults = () => {
   for (i = 0; i < data.length; i++) {
     if (userAnswers[i] === data[i]["correct_answer"]) {
       correctAnswer.push(data[i].id);
-    } if(userAnswers[i] !== data[i]["correct_answer"] && userAnswers[i] !== null) {
+    }
+    if (
+      userAnswers[i] !== data[i]["correct_answer"] &&
+      userAnswers[i] !== null
+    ) {
       wrongAnswer.push(data[i].id);
     }
     if (userAnswers[i] === null) {
@@ -115,9 +130,7 @@ const showResults = () => {
     }
   }
 
-  
-
- let text = `
+  let text = `
  "Game Over!"
  
  Scores
@@ -127,10 +140,26 @@ const showResults = () => {
  Wrong Answer  : ${wrongAnswer.length}  :>  ${wrongAnswer} <br>
  Blank Answer  : ${blankAnswer.length}  :> ${blankAnswer} <br>
 
- <button onclick="newGame()">Start New Quiz</button>
  `;
 
- gameSection.innerHTML = text;
-
+  gameSection.innerHTML = text;
 };
 
+const newGame = () => {
+  remember = 0;
+  const newData = [];
+
+  let i = 10;
+
+  while (i) {
+    let random = Math.floor(Math.random() * 10);
+    let newItem = data[random];
+
+    if (!newData.includes(newItem)) {
+      newData.push(newItem);
+      i--;
+    }
+  }
+
+  displayQuestions(false, newData);
+};

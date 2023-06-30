@@ -80,10 +80,10 @@
         "id": 8,
         "question": "Which character is used to indicate an end tag?",
         "answers": {
-            "answer_a": "/",
-            "answer_b": "<",
-            "answer_c": "*",
-            "answer_d": "^"
+            "a": "/",
+            "b": "<",
+            "c": "*",
+            "d": "^"
         },
         "correct_answer": "a"
     },
