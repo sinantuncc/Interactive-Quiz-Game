@@ -2,18 +2,25 @@
     --border : 1px solid green;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 html{
-    height: 100%;
+    height: 100vh;
 }
 body{
     margin: 0;
     padding: 0;
 }
-*{
-    box-sizing: border-box;
+
+.d-none{
+    display: none;
 }
 
 .time{
+    position: absolute;
+    text-align: center;
     top: 0;
     right: 0;
     border-bottom: var(--border); 
@@ -22,25 +29,20 @@ body{
     padding: 1em 1em 2em 2em ;
     font-size: 1.6em;
     font-weight: 900;
+    display: none;
 }
 
 .game-panel{
-    height: 400px;
     position: relative;
     border: var(--border);
+    height: 50vh;
+    width: 50vw;
 }
 
-.info-panel {
-    height: 400px;
-}
-
-.answers {
+#questionArea{
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 1em;
 }
-.answers > p {
-    background-color: rgb(177, 175, 175);
-    padding: 10px;
-    border-radius: 1em;
+
+.answers{
+    display: grid;
 }
